@@ -1,0 +1,10 @@
+﻿services:
+  mini-drive-api-pg:
+    container_name: mini_drive
+    image: bitnami/postgresql:latest
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: mini_drive
+    ports:
+      - 5432:5432
